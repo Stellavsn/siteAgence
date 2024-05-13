@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Chakra+Petch:ital,wght@1,300&family=Playfair+Display:ital,wght@1,900&family=Roboto:ital,wght@1,300&display=swap');
+
+/* Page*/
+html {
+    margin:0;
+}
+body{
+    margin:0;
+    font-family: "roboto", sans-serif;
+}
+
+/*Entete*/
+header {
+    background-image: url(https://www.decor-discount.com/15544-large_default/papier-peint-intisse-motif-geometrique-gris.jpg);
+    background-repeat: repeat-x;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*Liens*/
+a {
+    color: rgb(58, 3, 41);
+    text-decoration: none; 
+}
+
+/*Titre*/
+h1 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 40px;
+    color: #ff6b6b;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 10px;}
+h2 {
+    font-family: "roboto", cursive;
+    font-size: 40px;
+    color: #ff6b6b;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/*sous-titre*/
+#sous-titre {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 25px;
+}
+h1, h2, #sous-titre {
+    text-align: center;
+}
+
+
+nav {
+    Background-color: #a29bfe;
+    padding: 9px;
+    
+}
+nav a {
+    color: white
+}
+nav a :hover {
+   
+    color: #ecf0f1;
+    transition: 0.4s;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 5px 0;
+}
+nav ul li{
+    display: inline;
+    padding-right: 15px;
+}
+
+/*Tableau horaire*/
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+thead{
+    background-color: #9980FA;
+    color: white
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/*Presentation*/
+#presentation {
+    text-align: justify;
+    border-top: 4px dashed #82589F;
+    padding: 15px 0 0 0;
+}
+
+
+/*Image*/
+#accueil {
+    width: 100%;
+}
+
+#zone {
+    /*display: flex;*/
+    /*gap: 10px;*/
+    /*flex-direction: row-reverse;*/
+    /*align-items: center;*/
+    display:grid; 
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+
+/*Mettre en valeur*/
+.surligner {
+    font-weight: bold;
+    background-color: #82589F;
+    color: white;
+}
+
+.containeur {
+    width: 1000px;
+    margin: auto;
+}
+
+/*computer first*/
+@media all and (max-width: 800px) {
+    #zone {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .image2, .image3 {
+        display: none;
+    }
+}
